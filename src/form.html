@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>My Form Page</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <form action="http://127.0.0.1:8081/save_visit" method="post">
+      <label for="visitorName">Enter Visitor's Name: </label>
+      <input
+        type="text"
+        name="visitorName"
+        id="visitorName"
+        placeholder="Enter Visitor's Name"
+      />
+      <br /><br />
+      <label for="visitorAge">Enter Visitor's Age: </label>
+      <input
+        type="number"
+        name="visitorAge"
+        id="visitorAge"
+        placeholder="Enter Visitor's Age"
+      />
+      <br /><br />
+      <label for="dateOfVisit">Date of visit: </label>
+      <input type="date" name="dateOfVisit" id="dateOfVisit" /> <br /><br />
+      <label for="timeOfVisit">Time of Visit: </label>
+      <input type="time" name="timeOfVisit" id="timeOfVisit" /> <br /><br />
+      <label for="assistantName">Enter Assistant's Name: </label>
+      <input
+        type="text"
+        name="assistantName"
+        id="assistantName"
+        placeholder="Enter Assistant's Name"
+      />
+      <br /><br />
+      <label for="comments">Comments: </label>
+      <textarea name="comments" id="comments" cols="50" value=""></textarea>
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

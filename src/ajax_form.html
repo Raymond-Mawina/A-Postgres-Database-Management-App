@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single-Page-App</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="jquery-3.6.1.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <table id="visitors" border="solid"></table>
+
+    <form id="update-form">
+      <div id="userId"></div>
+      <div id="userColumn">
+        <label for="columnToUpdate">
+          Select column To Update:
+          <select name="columnToUpdate" id="columnToUpdate" required>
+            <option value="visitorName">Name</option>
+            <option value="visitorAge">Age</option>
+            <option value="dateOfVisit">Date</option>
+            <option value="timeOfVisit">Time</option>
+            <option value="nameOfAssistant">AssistantName</option>
+            <option value="comments">Comments</option>
+          </select>
+        </label>
+      </div>
+      <div id="rowValue">
+        <label>
+          Enter new Name:
+          <input type="text" name="value" id="value" required />
+        </label>
+      </div>
+
+      <input
+        id="update-submit"
+        type="submit"
+        value="Update Visitor Info"
+        required
+      />
+    </form>
+
+    <form id="ajax-form">
+      <label for="visitorName">Enter Visitor's Name: </label>
+      <input
+        type="text"
+        name="visitorName"
+        id="visitorName"
+        placeholder="Enter Visitor's Name"
+        required
+      />
+      <br /><br />
+      <label for="visitorAge">Enter Visitor's Age: </label>
+      <input
+        type="number"
+        name="visitorAge"
+        id="visitorAge"
+        placeholder="Enter Visitor's Age"
+        min="1"
+        required
+      />
+      <br /><br />
+      <label for="dateOfVisit">Date of visit: </label>
+      <input type="date" name="dateOfVisit" id="dateOfVisit" required />
+      <br /><br />
+      <label for="timeOfVisit">Time of Visit: </label>
+      <input type="time" name="timeOfVisit" id="timeOfVisit" required />
+      <br /><br />
+      <label for="assistantName">Enter Assistant's Name: </label>
+      <input
+        type="text"
+        name="assistantName"
+        id="assistantName"
+        placeholder="Enter Assistant's Name"
+        required
+      />
+      <br /><br />
+      <label for="comments">Comments: </label>
+      <textarea
+        name="comments"
+        id="comments"
+        cols="50"
+        value=""
+        required
+      ></textarea>
+      <br />
+      <br />
+
+      <div id="saveErrorMessages"></div>
+
+      <input type="submit" value="Add new Visitor" />
+    </form>
+    <script src="./ajax_form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+body {
+  background-color: aliceblue;
+}
+
+header {
+  text-align: center;
+}
+
+div {
+  margin-left: 2%;
+  margin-top: 5px;
+  text-align: center;
+}

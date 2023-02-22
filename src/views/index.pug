@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title Thank you Page
+    style
+      include style.css
+      
+  body
+    header 
+      h3 Thanks for the info! The following was saved to the database:
+    div 
+      strong Visitor Name: 
+      span #{visitorName}
+    div 
+      strong Visitor Age: 
+      span #{visitorAge}
+    div 
+      strong Date of Visit:
+      span #{dateOfVisit}
+    div 
+      strong Time of Visit:
+      span #{timeOfVisit}
+    div 
+      strong Assistant's Name:
+      span #{nameOfAssistant}
+    div 
+      strong Comments:
+      span #{comments}
+    div 
+      strong ID of the new Visitor Instance:
+      span #{lastVisitor}
+    
